@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>IntroHtml1</title>
+</head>
+<body>
+	<h3>Please fill in this form.</h3>
+	<div>
+		<form>
+			<p><label for="clientName">First Name</label>
+			<input type ="text" id="clientName" name="clientName" required/></p>
+			
+            <p><label for="gender">Gender</label>
+			<input type="radio" name="gender" checked id="gender" value="Male" />Male
+            <input type="radio" name="gender" id="gender" value="Female" />Female</p>
+
+            <p><label for="color">Color</label>
+			<input type ="checkbox" name="red" value="ok" />Red
+            <input type="checkbox" name="green" value="ok" />Green
+            <input type="checkbox" name="blue" value="ok" />Blue</p>
+
+            <p><select style="width: 80px;" size="1" name="size">
+            <option disabled selected>Size</option>
+			<option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            </select></p>
+            
+            <p><select style="width: 80px;" size="4" multiple name ="time">
+            <option disabled selected>Time</option>
+            <option value ="10-13">10-13</option>
+            <option value="13-16">13-16</option>
+            <option value="16-19">16-19</option>
+            </select></p>
+
+            <p>Comment:</p>
+			<p><textarea rows="4" cols="30" name="comment"></textarea></p>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
