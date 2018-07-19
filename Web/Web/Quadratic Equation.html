@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quadratic equation</title>
+</head>
+<body>
+    <h3>Please fill in this form</h3>
+    <div>
+        <form>
+            <p>
+                <label for="a">Coefficient a:</label>
+                <input type="text" id="a" name="a" required placeholder="0" />
+            </p>
+            <p>
+                <label for="b">Coefficient b:</label>
+                <input type="text" id="b" name="b" required placeholder="0" />
+            </p>
+            <p>
+                <label for="c">Coefficient c:</label>
+                <input type="text" id="c" name="c" required placeholder="0" />
+            </p>
+            <button type="button" id="OK">Submit</button>
+        </form>
+        <form>
+            <p>
+                <label for="result">Result is:</label>
+                <input type="text" id="result" name="result" style="width:600px" />
+            </p>
+        </form>
+    </div>
+    <script>
+		document.getElementById('result').value = '0';
+
+		document.getElementById('OK').onclick = function(){
+			var a = Number(document.getElementById('a').value);
+			var b = Number(document.getElementById('b').value);
+			var c = Number(document.getElementById('c').value);
+
+			if (a < Number.EPSILON)
+			{
+				if (Math.abs(b) < Number.EPSILON)
+				{
+					document.getElementById('result').value = 'Данное выражение не является квадратным уравнением и не имеет решения';
+				}
+				else
+				{
+					document.getElementById('result').value = 'Данное уравнение не является квадратным, его решение: x = ' + -c / b;
+				}
+			}
+			else
+			{
+				var discriminant = Number(Math.pow(b, 2) - 4 * a * c);
+
+				if (Math.abs(discriminant) < Number.EPSILON)
+				{
+					var x = Number(-b / (2 * a));
+					document.getElementById('result').value = 'Решение уравнения: x = ' + x;
+				}
+				else if (discriminant > 0)
+				{
+					var x1 = Number((-b + Math.sqrt(discriminant)) / (2 * a));
+					var x2 = Number((-b - Math.sqrt(discriminant)) / (2 * a));
+					document.getElementById('result').value = 'Решение уравнения: x1 = ' + x1 + ', x2 = ' + x2;
+				}
+				else
+				{
+					document.getElementById('result').value = "По условию задачи данное квадратное уравнение не имеет решений";
+				}
+			}
+		}
+    </script>
+</body>
+</html>	

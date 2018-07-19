@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+		var array = [1, 10, 2, 3, 5, 0, 7, 8];
+		console.log('Массив: ', array);
+
+		array.sort(function(a, b){
+			return b - a;
+		});
+		console.log('Отсортированный по убыванию массив: ', array);
+
+		firstFiveElements = array.slice(0, 5);
+		console.log('Первые 5 элементов массива: ', firstFiveElements);
+
+		lastFiveElements = array.slice(array.length - 5, array.length);
+		console.log('Последние 5 элементов массива: ', lastFiveElements);
+
+		var sum = 0;
+		for (i = 0; i < array.length; i++)
+		{
+			if (array[i] % 2 == 0)
+			{
+				sum += array[i];
+			}
+		}
+		console.log('Сумма элементов массива, которые являются четными числами: ', sum);
+
+		var array100 = [];
+		for (i = 1; i <= 100; i++)
+		{
+			array100.push(i);
+		}
+
+		var arrayOfEvenSquares = [];
+		for (i = 0; i < array100.length; i++)
+		{
+			if (array100[i] % 2 == 0)
+			{
+				arrayOfEvenSquares.push(array100[i] * array100[i]);
+			}
+		}
+		console.log('Массив квадратов четных чисел от 1 до 100: ', arrayOfEvenSquares);
+    </script>
+</body>
+</html>	
