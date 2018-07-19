@@ -45,10 +45,10 @@
   <ItemGroup>
     <Content Include="Array.html" />
     <Content Include="IntroHtml1.html" />
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="IntroHtml2.html" />
     <Content Include="Quadratic Equation.html" />
+    <Content Include="TODO List.html" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
