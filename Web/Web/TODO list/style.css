@@ -1,0 +1,12 @@
+#main {
+    padding: 30px;
+}
+
+li {
+    height: 50px;
+}
+
+.deleteButton {
+    float: right;
+    margin-right: 1100px;
+}

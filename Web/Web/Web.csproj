@@ -44,11 +44,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Array.html" />
+    <Content Include="Gabriel\css\normalize.css" />
+    <Content Include="Gabriel\css\style.css" />
+    <Content Include="Gabriel\Gabriel.html" />
+    <Content Include="Gabriel\pictures\bin.png" />
+    <Content Include="Gabriel\pictures\refresh.png" />
     <Content Include="IntroHtml1.html" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="IntroHtml2.html" />
+    <Content Include="PhoneBook\css\normalize.css" />
+    <Content Include="PhoneBook\css\style.css" />
+    <Content Include="PhoneBook\PhoneBook.html" />
+    <Content Include="PhoneBook\script\jQuery.js" />
+    <Content Include="PhoneBook\script\script.js" />
     <Content Include="Quadratic Equation.html" />
-    <Content Include="TODO List.html" />
+    <Content Include="TODO list\normalize.css" />
+    <Content Include="TODO list\style.css" />
+    <Content Include="TODO list\TODO List.html" />
+    <Content Include="TODO list\TODO list.js" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

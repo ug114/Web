@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#fcfdfd, #dbdbdd);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Start of page header */
+
+.page-header ul {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(253,216,45);
+    font-size: 19px;
+}
+
+.page-header li {
+	display: table-cell;
+    width: 14%;
+    height: 62px;
+    text-align: center;
+	vertical-align: middle;
+}
+
+.page-header a {
+    text-decoration: none;
+    color: #846F0D;
+}
+
+.page-header a:hover {
+    text-decoration: underline; 
+}
+
+.page-header .disabled a {
+    text-decoration: none;
+    cursor: default;
+    opacity: 0.3;
+}
+
+.page-header .active a {
+    text-decoration: underline;
+    color: #D50308;
+}
+
+.page-header sub {
+    bottom: 0;
+}
+
+.page-header li > div {
+    border-right: 1px solid #CBAB16;
+}
+
+/* End of page header */
+
+/* Start of validators table */
+
+.validators-table-wrapper {
+    overflow: auto;
+    max-height: 260px; 
+    padding: 0 10px;
+}
+
+.validators-table {
+    width: 100%;
+    border-spacing: 0;
+    color: #7f7f7f;
+}
+
+.validators-table > thead > tr {
+    font-size: 12px;
+    color: #6D6D6D;
+}
+
+.validators-table > thead th {
+    border-bottom: 1px solid #dddddd; 
+}
+
+.validators-table th, .validators-table td {
+    padding: 10px 5px;
+}
+
+.validators-table .validator-col {
+    width: 110px;
+    text-align: left;
+}
+
+.validators-table .letter-col {
+    width: 60px;
+    text-align: center;
+}
+
+.validators-table .address-col {
+    text-align: left;
+}
+
+.validators-table .rest-col {
+    width: 90px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.validators-table .comment-col {
+    text-align: left;
+}
+
+.validators-table .comment-col input {
+    width: 100%;
+}
+
+/* End of validators table */
+
+/* Buttons panel */
+
+.buttons-panel {
+    padding: 0 20px;
+}
+
+.buttons-panel:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+.buttons-panel .left-buttons {
+    float: left;
+}
+
+.buttons-panel .right-buttons {
+    float: right;
+    padding-right: 20px;
+}
+
+.button {
+    width: 175px;
+    height: 42px;
+    background-color: #87B335;
+    color: #ffffff; 
+    border: 1px solid #628428;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:hover {
+    background-color: #97C345;
+}
+
+.button.button-white {
+    background-color: #e2e2e2;
+    color: #939393;
+    border: 1px solid #AFB0B0;
+}
+
+.button.button-white:hover {
+    background-color: #f2f2f2;
+}
+
+/* End of buttons panel */
+
+/* Previous requests table header */
+
+.refresh-icon {
+    width: 40px;
+}
+
+.requests-table-header {
+    margin-top: 35px; 
+    line-height: 40px;
+    color: #777777;
+    font-weight: bold;
+}
+
+.left-part {
+    float: left;
+    padding-left: 25px;
+}
+
+.requests-table-header .refresh-button-wrapper {
+    float: right;
+    font-size: 12px;
+    padding-right: 35px;
+}
+
+.requests-table-header .refresh-button-wrapper > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* End of previous requests table header */
+
+/* Previous requests table */
+
+.requests-table-wrapper {
+    overflow: auto;
+    max-height: 150px; 
+    width: 100%;
+}
+
+.requests-table {
+    width: 100%;
+    color: #4d5a6a;
+    border: 1px dotted #c9caca;
+    border-spacing: 0;
+    font-size: 13px;    
+    border-bottom: 0;
+}
+
+.requests-table th {
+    background-color: #ffd40c;
+    height: 30px;
+    padding-left: 15px;
+    text-align: left;
+    color: #72600b;
+    border: 1px dotted #c9aa12;
+    border-spacing: 0;
+}
+
+.requests-table td {
+    height: 30px;
+    padding-left: 15px;
+    border: 1px dotted #f5f5f5;
+    border-spacing: 0;
+}
+
+.requests-table .date {
+    width: 200px;
+    padding-left: 25px;
+}
+
+.requests-table .number {
+    width: 200px;
+}
+
+.requests-table .status {
+    width: 200px;
+}
+
+.requests-table .reservation-system {
+    width: 200px;
+}
+
+.requests-table .not-considered {
+    background-color: #b4d3f8;
+}
+
+.requests-table .considered {
+    background-color: #e9e9ea;
+}
+
+.bin {
+    width: 20px;
+}
+
+.bin-wrapper {
+    float: right;
+    padding-right: 40px;
+}
+
+/* End of previous requests table */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="normalize.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<title>Список контактов</title>
+</head>
+<body>
+	<div id="main">
+		<h3>Заполните форму:</h3>
+		<form>
+			<p>
+				<label for="last-name-input">Фамилия: </label>
+				<input type="textarea" id="last-name-input" />
+			</p>
+			<p>
+				<label for="first-name-input">Имя: </label>
+				<input type="textarea" id="first-name-input" />
+			</p>
+			<p>
+				<label for="phone-number-input">Номер телефона: </label>
+				<input type="textarea" id="phone-number-input" />
+			</p>
+			<button type="button" id="OK">Добавить контакт</button>
+		</form>
+		
+		<h1>Список контактов</h1>
+		<div id="table-wrapper">
+			<table id="phone-table">
+				<thead>
+					<th class="number">№</th>
+					<th class="last-name">Фамилия</th>
+					<th class="first-name">Имя</th>
+					<th class="phone-number">Номер телефона</th>
+					<th class="delete"></th>
+				</thead>
+				<tbody id="table-body"></tbody>
+			</table>
+		</div>
+	</div>
+	<script src="jQuery.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>	

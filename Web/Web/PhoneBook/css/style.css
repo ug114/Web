@@ -1,0 +1,50 @@
+#main {
+    padding: 30px;
+}
+
+/* Form */
+
+input {
+    float: right;
+    margin-right: 1200px;
+}
+
+
+/* End of form */ 
+
+/* Phone table */
+
+#phone-table {
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+#phone-table td, #phone-table th {
+    border: 1px solid black;
+    height: 60px;
+    padding: 0;
+    text-align: center;
+}
+
+.number {
+    width: 90px;
+}
+
+.last-name {
+    width: 200px;
+}
+
+.first-name {
+    width: 200px;
+}
+
+.phone-number {
+    width: 150px;
+}
+
+.delete {
+    width: 200px;
+}
+
+
+/* End of phone-table */
