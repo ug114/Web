@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<link href="normalize.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
+	<link href="./css/normalize.css" rel="stylesheet">
+	<link href="./css/style.css" rel="stylesheet">
 	<title>Список контактов</title>
 </head>
 <body>
@@ -12,15 +12,18 @@
 		<form>
 			<p>
 				<label for="last-name-input">Фамилия: </label>
-				<input type="textarea" id="last-name-input" />
+				<input type="textarea" id="last-name-input" />	
+				<span id="last-name-error-message">Введите фамилию</span>			
 			</p>
 			<p>
 				<label for="first-name-input">Имя: </label>
 				<input type="textarea" id="first-name-input" />
+				<span id="first-name-error-message">Введите имя</span>
 			</p>
 			<p>
 				<label for="phone-number-input">Номер телефона: </label>
 				<input type="textarea" id="phone-number-input" />
+				<span id="phone-number-error-message">Введите номер телефона</span>
 			</p>
 			<button type="button" id="OK">Добавить контакт</button>
 		</form>
@@ -39,7 +42,7 @@
 			</table>
 		</div>
 	</div>
-	<script src="jQuery.js"></script>
-	<script src="script.js"></script>
+	<script src="./script/jQuery.js"></script>
+	<script src="./script/script.js"></script>
 </body>
 </html>	

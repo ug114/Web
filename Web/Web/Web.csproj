@@ -47,8 +47,21 @@
     <Content Include="Gabriel\css\normalize.css" />
     <Content Include="Gabriel\css\style.css" />
     <Content Include="Gabriel\Gabriel.html" />
+    <Content Include="Gabriel\jQuery.js" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\AUTHORS.txt" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\index.html" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.css" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.js" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.min.css" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.min.js" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.structure.css" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.structure.min.css" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.theme.css" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\jquery-ui.theme.min.css" />
+    <Content Include="Gabriel\jquery-ui-1.12.1\LICENSE.txt" />
     <Content Include="Gabriel\pictures\bin.png" />
     <Content Include="Gabriel\pictures\refresh.png" />
+    <Content Include="Gabriel\script.js" />
     <Content Include="IntroHtml1.html" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="IntroHtml2.html" />
@@ -65,7 +78,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Gabriel\jquery-ui-1.12.1\package.json" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

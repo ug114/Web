@@ -112,6 +112,28 @@ body {
     width: 100%;
 }
 
+.ui-slider-horizontal {
+    height: 7px;
+    
+}
+
+.ui-slider-handle {
+    background: url("../pictures/bin.png");
+}
+
+.slider {
+    width: 70%;
+    margin: 0;
+    
+}
+
+.slider-value {
+    width: 70px;
+    height: 20px;
+    float: right;
+    padding-right: 20px;
+}
+
 /* End of validators table */
 
 /* Buttons panel */
@@ -138,25 +160,26 @@ body {
 .button {
     width: 175px;
     height: 42px;
-    background-color: #87B335;
     color: #ffffff; 
     border: 1px solid #628428;
     cursor: pointer;
     outline: none;
+    background-image: linear-gradient(to bottom, #9ec454, #7ca92f);
 }
 
 .button:hover {
-    background-color: #97C345;
+    background-image: linear-gradient(to bottom, #aed464, #8cb93f);
 }
 
 .button.button-white {
     background-color: #e2e2e2;
     color: #939393;
     border: 1px solid #AFB0B0;
+    background-image: linear-gradient(to bottom, #ffffff, #c9c9c9);
 }
 
 .button.button-white:hover {
-    background-color: #f2f2f2;
+    background-image: linear-gradient(to bottom, #ffffff, #d9d9d9);
 }
 
 /* End of buttons panel */
