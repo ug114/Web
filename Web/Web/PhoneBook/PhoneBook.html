@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -8,30 +8,41 @@
 </head>
 <body>
 	<div id="main">
-		<h3>Заполните форму:</h3>
+		<h2>Контакты</h2>
 		<form>
 			<p>
 				<label for="last-name-input">Фамилия: </label>
-				<input type="textarea" id="last-name-input" />	
+				<input type="textarea" id="last-name-input" placeholder="Фамилия"/>	
 				<span id="last-name-error-message">Введите фамилию</span>			
 			</p>
 			<p>
 				<label for="first-name-input">Имя: </label>
-				<input type="textarea" id="first-name-input" />
+				<input type="textarea" id="first-name-input" placeholder="Имя"/>
 				<span id="first-name-error-message">Введите имя</span>
 			</p>
 			<p>
 				<label for="phone-number-input">Номер телефона: </label>
-				<input type="textarea" id="phone-number-input" />
+				<input type="textarea" id="phone-number-input" placeholder="Номер телеофна"/>
 				<span id="phone-number-error-message">Введите номер телефона</span>
 			</p>
 			<button type="button" id="OK">Добавить контакт</button>
 		</form>
 		
+		<div id="search-wrapper">
+			<form>
+				<input type="text" id="search-text" placeholder="Поиск"/>
+				<button type="button" id="search">Поиск</button>
+				<button type="button" id="reset">Сбросить</button>
+			</form>
+		</div>
+		
 		<h1>Список контактов</h1>
 		<div id="table-wrapper">
 			<table id="phone-table">
 				<thead>
+					<th class="delete-checkbox-td">
+						<input type="checkbox" id="delete-all-checkbox" />
+					</th>
 					<th class="number">№</th>
 					<th class="last-name">Фамилия</th>
 					<th class="first-name">Имя</th>
@@ -41,8 +52,9 @@
 				<tbody id="table-body"></tbody>
 			</table>
 		</div>
+		<button type="button" id="delete-checkbox-button">Удалить выбранные</button>
 	</div>
-	<script src="./script/jQuery.js"></script>
-	<script src="./script/script.js"></script>
+	<script src="./js/jQuery.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 </html>	

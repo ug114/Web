@@ -4,7 +4,7 @@
 
 /* Form */
 
-input {
+form input {
     position: absolute;
     left: 300px;
 }
@@ -16,7 +16,35 @@ form span {
     visibility: hidden;
 }
 
+#OK {
+    height: 25px;
+}
+
 /* End of form */ 
+
+/* Search form */
+
+#search-wrapper {
+    padding-top: 40px;
+}
+
+#search-wrapper input {
+    left: 30px;
+}
+
+#search-wrapper button {
+    width: 100px;
+    height: 25px;
+}
+#search {
+    margin-left: 220px;
+}
+
+#reset {
+    margin-left: 20px;
+}
+
+/* End of search form */
 
 /* Phone table */
 
@@ -39,6 +67,10 @@ form span {
     text-align: center;
 }
 
+.delete-checkbox-td {
+    width: 90px;
+}
+
 .number {
     width: 90px;
 }
@@ -52,7 +84,7 @@ form span {
 }
 
 .phone-number {
-    width: 150px;
+    width: 200px;
 }
 
 .delete {
@@ -69,3 +101,8 @@ button:hover {
 }
 
 /* End of phone-table */
+
+#delete-checkbox-button {
+    height: 25px;
+    margin-top: 50px;
+}

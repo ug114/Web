@@ -67,9 +67,10 @@
     <Content Include="IntroHtml2.html" />
     <Content Include="PhoneBook\css\normalize.css" />
     <Content Include="PhoneBook\css\style.css" />
+    <Content Include="PhoneBook\image\delete.png" />
+    <Content Include="PhoneBook\js\jQuery.js" />
+    <Content Include="PhoneBook\js\script.js" />
     <Content Include="PhoneBook\PhoneBook.html" />
-    <Content Include="PhoneBook\script\jQuery.js" />
-    <Content Include="PhoneBook\script\script.js" />
     <Content Include="Quadratic Equation.html" />
     <Content Include="TODO list\normalize.css" />
     <Content Include="TODO list\style.css" />
