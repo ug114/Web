@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -12,17 +12,17 @@
 		<form>
 			<p>
 				<label for="last-name-input">Фамилия: </label>
-				<input type="textarea" id="last-name-input" placeholder="Фамилия"/>	
+				<input type="text" id="last-name-input" placeholder="Фамилия"/>	
 				<span id="last-name-error-message">Введите фамилию</span>			
 			</p>
 			<p>
 				<label for="first-name-input">Имя: </label>
-				<input type="textarea" id="first-name-input" placeholder="Имя"/>
+				<input type="text" id="first-name-input" placeholder="Имя"/>
 				<span id="first-name-error-message">Введите имя</span>
 			</p>
 			<p>
 				<label for="phone-number-input">Номер телефона: </label>
-				<input type="textarea" id="phone-number-input" placeholder="Номер телеофна"/>
+				<input type="text" id="phone-number-input" placeholder="Номер телеофна"/>
 				<span id="phone-number-error-message">Введите номер телефона</span>
 			</p>
 			<button type="button" id="OK">Добавить контакт</button>
@@ -40,14 +40,16 @@
 		<div id="table-wrapper">
 			<table id="phone-table">
 				<thead>
-					<th class="delete-checkbox-td">
-						<input type="checkbox" id="delete-all-checkbox" />
-					</th>
-					<th class="number">№</th>
-					<th class="last-name">Фамилия</th>
-					<th class="first-name">Имя</th>
-					<th class="phone-number">Номер телефона</th>
-					<th class="delete"></th>
+                    <tr>
+                        <th class="delete-checkbox-td">
+                            <input type="checkbox" id="delete-all-checkbox" />
+                        </th>
+                        <th class="number">№</th>
+                        <th class="last-name">Фамилия</th>
+                        <th class="first-name">Имя</th>
+                        <th class="phone-number">Номер телефона</th>
+                        <th class="delete"></th>
+                    </tr>
 				</thead>
 				<tbody id="table-body"></tbody>
 			</table>

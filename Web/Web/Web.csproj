@@ -71,7 +71,8 @@
     <Content Include="PhoneBook\js\jQuery.js" />
     <Content Include="PhoneBook\js\script.js" />
     <Content Include="PhoneBook\PhoneBook.html" />
-    <Content Include="Quadratic Equation.html" />
+    <Content Include="Quadratic Equation\Quadratic Equation.html" />
+    <Content Include="Quadratic Equation\script.js" />
     <Content Include="TODO list\normalize.css" />
     <Content Include="TODO list\style.css" />
     <Content Include="TODO list\TODO List.html" />
