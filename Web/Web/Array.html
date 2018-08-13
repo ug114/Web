@@ -34,11 +34,11 @@
         }
 
         var arrayOfEvenSquares = [];
-        for (i = 0; i < array100.length; i++) {
-            if (array100[i] % 2 === 0) {
-                arrayOfEvenSquares.push(array100[i] * array100[i]);
+        array100.forEach(function (element) {
+            if (element % 2 === 0) {
+                arrayOfEvenSquares.push(element * element);
             }
-        }
+        });
         console.log('Массив квадратов четных чисел от 1 до 100: ', arrayOfEvenSquares);
     </script>
 </body>

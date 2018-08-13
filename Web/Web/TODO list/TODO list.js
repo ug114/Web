@@ -5,26 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     addTodoButton.addEventListener("click", function () {
         var text = addTodoInput.value;
-
-        if (text !== '') {
+        var checkText = text.replace(/\s/g, "");
+        
+        if (text !== '' && checkText !== '') {
             var listItem = document.createElement("li");
             listItem.innerText = text;
 
             var newDeleteButton = document.createElement("button");
             newDeleteButton.className = "deleteButton";
             newDeleteButton.innerHTML = "Удалить запись";
+            newDeleteButton.addEventListener("click", function () {
+                list.removeChild(this.parentNode);
+            });
+        
             listItem.appendChild(newDeleteButton);
 
             list.appendChild(listItem);
             addTodoInput.value = "";
-        }
-
-        var deleteButtons = document.getElementsByClassName("deleteButton");
-
-        for (var i = 0; i < deleteButtons.length; i++) {
-            deleteButtons[i].addEventListener("click", function () {
-                list.removeChild(this.parentNode);
-            });
         }
     });
 });

@@ -8,7 +8,12 @@ document.getElementById("OK").addEventListener("click", function () {
 
     if (a < Number.EPSILON) {
         if (Math.abs(b) < Number.EPSILON) {
-            result.value = "Данное выражение не является квадратным уравнением и не имеет решения";
+            if (Math.abs(c) < Number.EPSILON) {
+                result.value = "Данное уравнение имеет бесконечное множество решений";
+            }
+            else {
+                result.value = "Данное уравнение не имеет решений";
+            }
         }
         else {
             result.value = "Данное уравнение не является квадратным, его решение: x = " + -c / b;
