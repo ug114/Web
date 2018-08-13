@@ -157,7 +157,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var deleteAllCheckbox = document.getElementById("delete-all-checkbox");
 
         deleteAllCheckbox.addEventListener("click", function () {
-            $(this).is(':checked') ? $(".delete-checkbox").prop("checked", true) : $(".delete-checkbox").prop("checked", false);
+            $(this).is(":checked") ? $(".delete-checkbox").prop("checked", true) : $(".delete-checkbox").prop("checked", false);
         });
 
         // Поиск

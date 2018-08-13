@@ -12,14 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 step: 10,
                 animate: 100,
                 slide: function (event, ui) {
-                    $(this).siblings('.slider-value').attr("value", ui.value);
-                    $(this).siblings('.slider-value').trigger('change');
+                    $(this).siblings(".slider-value").attr("value", ui.value);
+                    $(this).siblings(".slider-value").trigger("change");
                 }
             });
         });
 
         $(".slider-value").change(function () {
-            $('.slider-value').each(function () {
+            $(".slider-value").each(function () {
                 var sliderVal = Number($(this).prop("value"));
                 $(this).siblings(".slider").slider("option", "value", sliderVal);
             });
