@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var OKButton = document.getElementById("OK");
+    var okButton = document.getElementById("ok");
     var firstNameInput = document.getElementById("first-name-input");
     var lastNameInput = document.getElementById("last-name-input");
     var phoneNumberInput = document.getElementById("phone-number-input");
@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var lastNumber = 1;
 
     // Добавление контакта
-    OKButton.addEventListener("click", function () {
+    okButton.addEventListener("click", function () {
         var firstName = firstNameInput.value;
         var lastName = lastNameInput.value;
         var phoneNumber = phoneNumberInput.value;
-        var isExisting = 0;
+        var isExisting = false;
 
         if (firstName !== "") {
             $("#first-name-input").css("border-color", "initial");
@@ -34,12 +34,12 @@ document.addEventListener("DOMContentLoaded", function () {
             for (var i = 0; i < contacts.length; i++) {
                 if (contacts[i].innerText === phoneNumber) {
                     alert("Контакт с таким номером телефона уже существует.");
-                    isExisting = 1;
+                    isExisting = true;
                     break;
                 }
             }
 
-            if (isExisting === 0) {
+            if (isExisting === false) {
                 var newContact = document.createElement("tr");
 
                 var deleteCheckboxTd = document.createElement("td");
@@ -89,11 +89,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 newContact.appendChild(deleteTd);
 
                 tableBody.appendChild(newContact);
+
+                firstNameInput.value = "";
+                lastNameInput.value = "";
+                phoneNumberInput.value = "";
             }
 
-            firstNameInput.value = "";
-            lastNameInput.value = "";
-            phoneNumberInput.value = "";
+            
         }
         else {
             if (firstName === "") {
@@ -126,7 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 lastNumber = numbers.length++;
-            })
+            });
         }
 
         var deleteCheckboxButton = document.getElementById("delete-checkbox-button");
@@ -149,19 +151,14 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             lastNumber = numbers.length + 1;
-        })
+        });
 
         // Общий чекбокс
         var deleteAllCheckbox = document.getElementById("delete-all-checkbox");
 
         deleteAllCheckbox.addEventListener("click", function () {
-            if ($(this).is(':checked')) {
-                $(".delete-checkbox").prop("checked", true);
-            }
-            if (!$(this).is(':checked')) {
-                $(".delete-checkbox").prop("checked", false);
-            }
-        })
+            $(this).is(':checked') ? $(".delete-checkbox").prop("checked", true) : $(".delete-checkbox").prop("checked", false);
+        });
 
         // Поиск
         searchButton = document.getElementById("search");
@@ -174,11 +171,11 @@ document.addEventListener("DOMContentLoaded", function () {
             var numbers = document.getElementsByClassName("phone-number");
 
             for (var i = 0; lastNames.length; i++) {
-                if (searchText != lastNames[i].value && searchText != firstNames[i].value && searchText != numbers[i].value) {
+                if (searchText !== lastNames[i].value && searchText !== firstNames[i].value && searchText !== numbers[i].value) {
                     //var closestParent = lastNames[i].closest("tr");
                     //closestParent.hide();
                 }
             }
-        })
-    })
-})
+        });
+    });
+});
