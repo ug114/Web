@@ -134,8 +134,8 @@
 					<td class="rest-col">10</td>
 					<td class="request-col">
 						<div class="slider"></div>
-						<input type="text" class="slider-value" />
-					</td>
+                        <input type="text" class="slider-value" />
+                    </td>
 					<td class="comment-col">
 						<input placeholder="Комментарий" class="comment" type="text" />
 					</td>
@@ -156,12 +156,12 @@
 		<div class="left-part">
 			Предыдущие заявки
 		</div>
-		<div class="refresh-button-wrapper">
-			<div>
-				Обновлено 13.11.2012, 15:45
-			</div>
-			<img class="refresh-icon" src="pictures/refresh.png">
-		</div>
+        <div class="refresh-button-wrapper">
+            <div>
+                Обновлено 13.11.2012, 15:45
+            </div>
+            <button type="button" title="Обновить информацию" class="refresh-button"></button>
+        </div>
 	</div>
 	<div class="requests-table-wrapper">
 		<table class="requests-table">
@@ -179,12 +179,14 @@
 				<td class="number">32512192E75B</td>
 				<td class="status">На рассмотрении</td>
 				<td class="reservation-system">Gabriel</td>
-				<td>
-					400
-					<div class="bin-wrapper">
-                        <button type="button" title="delete" class="delete-button"></button>
-					</div>
-				</td>
+                <td>
+                    <div class="value-wrapper">
+                        400
+                    </div>
+                    <div class="bin-wrapper">
+                        <button type="button" title="Удалить заявку" class="delete-button"></button>
+                    </div>
+                </td>
 			</tr>
 			<tr class="not-considered">
 				<td class="date">18.12.2012, 10:04</td>
@@ -192,11 +194,13 @@
 				<td class="status">На рассмотрении</td>
 				<td class="reservation-system">Amadeus</td>
 				<td>
-					350
-					<div class="bin-wrapper"> 
-						<button type="button" title="delete" class="delete-button"></button>
+                    <div class="value-wrapper">
+                        350
                     </div>
-				</td>
+                    <div class="bin-wrapper">
+                        <button type="button" title="Удалить заявку" class="delete-button"></button>
+                    </div>
+                </td>
 			</tr>
 			<tr class="considered">
 				<td class="date">13.12.2012, 08:23</td>

@@ -92,10 +92,12 @@ body {
 .validators-table .letter-col {
     width: 60px;
     text-align: center;
+    font-size: 12px;
 }
 
 .validators-table .address-col {
     text-align: left;
+    font-size: 12px;
 }
 
 .validators-table .rest-col {
@@ -108,23 +110,35 @@ body {
     text-align: left;
 }
 
+.validators-table .request-col {
+    width: 250px;
+}
+
 .validators-table .comment-col input {
     width: 100%;
+    font-size: 10px;
+    padding-left: 8px;
 }
 
 .ui-slider-horizontal {
     height: 7px;
-    
+    margin: 0;    
 }
 
 .ui-slider-handle {
-    background: url("../pictures/bin.png");
+    background: url("../pictures/bin.png");    
 }
 
 .slider {
-    width: 70%;
+    width: 60%;
     margin: 0;
-    
+    width: 200px;
+    float: left;
+    margin-top: 14px;
+}
+
+.slider-value-wrapper {
+    width: 50px;
 }
 
 .slider-value {
@@ -181,6 +195,15 @@ body {
 
 .button.button-white:hover {
     background-image: linear-gradient(to bottom, #ffffff, #d9d9d9);
+}
+
+.refresh-button {
+    background: url("../pictures/refresh.png") no-repeat;
+    cursor: pointer;
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    border: none;
 }
 
 /* End of buttons panel */
@@ -259,6 +282,7 @@ body {
     padding-left: 15px;
     border: 1px dotted #f5f5f5;
     border-spacing: 0;
+    vertical-align: middle;
 }
 
 .not-considered > td {
@@ -295,8 +319,17 @@ body {
 }
 
 .bin-wrapper {
+    margin-top: 5px;
     float: right;
     padding-right: 40px;
+}
+
+.value-wrapper {
+    height: 30px;
+    width: 50px;
+    margin: 0;
+    float: left;
+    padding-top: 10px;
 }
 
 /* End of previous requests table */

@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var sliders = $(".slider");
 
         sliders.each(function () {
-            var value = Number($(this).text(), 10);
+            value = Number($(this).text(), 10);
 
             $(this).empty().slider({
                 value: 0,
@@ -25,4 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         });
     });
-})
+});
