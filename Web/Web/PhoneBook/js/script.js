@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
-    var okButton = document.getElementById("ok");
-    var firstNameInput = document.getElementById("first-name-input");
-    var lastNameInput = document.getElementById("last-name-input");
-    var phoneNumberInput = document.getElementById("phone-number-input");
+    var okButton = $("#ok")[0];
+    var firstNameInput = $("#first-name-input")[0];
+    var lastNameInput = $("#last-name-input")[0];
+    var phoneNumberInput = $("#phone-number-input")[0];
 
     var lastNumber = 1;
 
@@ -77,9 +77,22 @@ document.addEventListener("DOMContentLoaded", function () {
                 newDeleteButton.setAttribute("width", "20px");
                 newDeleteButton.setAttribute("class", "deleteButton");
 
+                newDeleteButton.addEventListener("click", function () {
+                    var contact = $(this).closest("tr");
+                    contact.remove();
+
+                    var numbers = $("tbody .number");
+
+                    for (var i = 0; i < numbers.length; i++) {
+                        numbers[i].innerText = i + 1;
+                    }
+
+                    lastNumber = numbers.length++;
+                });
+
                 deleteTd.appendChild(newDeleteButton);
 
-                var tableBody = document.getElementById("table-body");
+                var tableBody = $("#table-body")[0];
 
                 newContact.appendChild(deleteCheckboxTd);
                 newContact.appendChild(numberTd);
@@ -95,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 phoneNumberInput.value = "";
             }
 
-            
+
         }
         else {
             if (firstName === "") {
@@ -114,24 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }
 
-        var deleteButtons = document.getElementsByClassName("deleteButton");
-
-        for (var i = 0; i < deleteButtons.length; i++) {
-            deleteButtons[i].addEventListener("click", function () {
-                var contact = $(this).closest("tr");
-                contact.remove();
-
-                var numbers = $("tbody .number");
-
-                for (var i = 0; i < numbers.length; i++) {
-                    numbers[i].innerText = i + 1;
-                }
-
-                lastNumber = numbers.length++;
-            });
-        }
-
-        var deleteCheckboxButton = document.getElementById("delete-checkbox-button");
+        var deleteCheckboxButton = $("#delete-checkbox-button")[0];
 
         deleteCheckboxButton.addEventListener("click", function () {
 
@@ -154,16 +150,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         // Общий чекбокс
-        var deleteAllCheckbox = document.getElementById("delete-all-checkbox");
+        var deleteAllCheckbox = $("#delete-all-checkbox")[0];
 
         deleteAllCheckbox.addEventListener("click", function () {
             $(this).is(":checked") ? $(".delete-checkbox").prop("checked", true) : $(".delete-checkbox").prop("checked", false);
         });
 
         // Поиск
-        searchButton = document.getElementById("search");
+        searchButton = $("#search")[0];
         searchButton.addEventListener("click", function () {
-            searchTextElement = document.getElementById("search-text");
+            searchTextElement = $("#search-text")[0];
             searchText = searchTextElement.innerText;
 
             var lastNames = document.getElementsByClassName("last-name");
