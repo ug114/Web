@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         var text = addTodoInput.value;
         var checkText = text.replace(/\s/g, "");
         
-        if (text !== '' && checkText !== '') {
+        if (text !== "" && checkText !== "") {
             var listItem = document.createElement("li");
             listItem.innerText = text;
 

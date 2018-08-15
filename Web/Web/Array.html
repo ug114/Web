@@ -20,24 +20,18 @@
         lastFiveElements = array.slice(array.length - 5);
         console.log('Последние 5 элементов массива: ', lastFiveElements);
 
-        var sum = 0;
-        array.forEach(function (element) {
-            if (element % 2 === 0) {
-                sum += element;
-            }
+        var sum = array.filter(element => element % 2 === 0).reduce(function (a, b) {
+            return a + b;
         });
         console.log('Сумма элементов массива, которые являются четными числами: ', sum);
 
         var array100 = [];
-        for (i = 1; i <= 100; i++) {
+        for (var i = 1; i <= 100; i++) {
             array100.push(i);
         }
 
-        var arrayOfEvenSquares = [];
-        array100.forEach(function (element) {
-            if (element % 2 === 0) {
-                arrayOfEvenSquares.push(element * element);
-            }
+        var arrayOfEvenSquares = array100.filter(element => element % 2 === 0).map(function (num) {
+            return Math.pow(num, 2);
         });
         console.log('Массив квадратов четных чисел от 1 до 100: ', arrayOfEvenSquares);
     </script>
