@@ -260,10 +260,8 @@ body {
 .requests-table {
     width: 100%;
     color: #4d5a6a;
-    border: 1px dotted #c9caca;
     border-spacing: 0;
     font-size: 13px;
-    /*border-bottom: 0;*/
 }
 
 .requests-table th {
@@ -289,7 +287,7 @@ body {
     vertical-align: middle;
 }
 
-,not-consedered:first-child {
+.requests-table .first-tr {
     border-top-style: none;
 }
 
