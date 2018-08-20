@@ -261,7 +261,7 @@ body {
     width: 100%;
     color: #4d5a6a;
     border-spacing: 0;
-    font-size: 13px;
+    font-size: 13px;    
 }
 
 .requests-table th {
@@ -277,14 +277,15 @@ body {
 }
 
 .requests-table td {
+    border-collapse: collapse;
     height: 30px;
     padding-left: 15px;
     border-top: 1px dotted #f5f5f5;
     border-bottom: 1px dotted #bfc0c0;
     border-left: 1px dotted #f5f5f5;
     border-right: 1px dotted #bfc0c0;
-    border-spacing: 0;
-    vertical-align: middle;
+    /*border-spacing: 0;*/
+    vertical-align: middle;        
 }
 
 .requests-table .first-tr {
