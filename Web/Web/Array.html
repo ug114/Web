@@ -24,7 +24,7 @@
             return (value % 2 === 0);
         }).reduce(function (sum, current) {
             return sum + current;
-        });
+        }, 0);
         console.log('Сумма элементов массива, которые являются четными числами: ', result);
 
         var array100 = [];
